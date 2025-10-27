@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="manifest" href="manifest.json">
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ticketmaster">
+    <link rel="apple-touch-icon" href="icons/logo.png"> --> 
+
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <title>ticketmaster: Buy Verified Tickets</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+    <style>
+        #header {display: none;}
+        
+    </style>
+    <header class="header" id="header">
+        <nav class="nav container" id="popup-container"> 
+
+            <div style="cursor: pointer;" class="nav__menu" id="nav-menu" onclick="hav()">
+                <div class="nav-menu">
+                    <ul class="nav__list">
+
+                        <div class="board">
+                            <img src="assets/image/logos.png" height="30" width="30" > <br> <br>
+                            <p>Signed In as Lyndsay Oldenburg...</p>
+
+                        </div>
+
+
+                        <li class="nav__item" style="padding-top: 20px; padding-bottom: 20px;">
+                            <a href="#" class="nav__link ">
+                                <!--<i class='bx bx-search-alt nav__icon'></i> -->
+                                <img src="assets/image/loc.png" width="18" height="18">
+                                <span class="nav__name">Washington, DC</span>
+                            </a>
+                        </li>
+                        <hr >
+
+                        <br>
+
+                        <li class="nav__item " >
+                            <a href="index.html" class="nav__link">
+                                <!--<i class='bx bx-search-alt nav__icon'></i> -->
+                                <img src="assets/image/discover.png" width="24" height="24">
+                                <span class="nav__name">Discover</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <!--<i class='bx bxs-heart nav__icon'></i>-->
+                                <img src="assets/image/you.png" width="24" height="24">
+                                <span class="nav__name">For You</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item active-link">
+                            <a href="events.html" class="nav__link">
+                                <!--<i class='bx bxs-map-pin nav__icon'></i> -->
+                                <img src="assets/image/event1.png" width="24" height="24">
+                                <span class="nav__name">My Events</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <!--<i class='bx bx-money nav__icon'></i>-->
+                                <img src="assets/image/sell.png" width="24" height="24">
+                                <span class="nav__name">Sell</span>
+                            </a> 
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <!--<i class='bx bx-money nav__icon'></i>-->
+                                <img src="assets/image/noti.png" width="24" height="24">
+                                <span class="nav__name">Notifications</span>
+                            </a> 
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="account.html" class="nav__link">
+                                <!--<i class='bx bxs-user-circle nav__icon'></i>-->
+                                <img src="assets/image/my.png" width="24" height="24">
+                                <span class="nav__name">My Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <script>
+                // Close the side navigation
+                function hav() {
+                    document.getElementById("header").style.display = "none";
+                }
+            </script>
+            <!--
+            <img src="assets/image/globe_images/fagg.png" alt="american flag" class="nav__img">
+            -->
+        </nav>
+        
+    </header>
+
+    <script>
+        // Open the side navigation
+        function nav() {
+            document.getElementById("header").style.display = "block";
+        }
+
+    </script>
+    
+    <main>
+
+        <!--DISCOVER-->
+        <style>
+            .nav_btn{margin: 0; padding: 17px 16px; display: inline-block; position: absolute; top: 0; left: 0;}
+            .nav_btn span {width: 22px; background-color: #fff; height: 2px; display: block; margin-bottom: 4px;}
+            .nav_btn span:last-child {margin-bottom: 0px;}
+        </style>
+        <section class="container section section__height" style="margin: 0; padding: 0 0 0;">
+            
+            <div style="position: relative; margin-top: 0pt; padding: 1rem 0 1rem; height: 10px; width: 100%; background-color: rgb(0, 0, 0);">
+                <div style="position: fixed; margin-top: -14pt; padding: 1rem 0 1rem; height: 70px; width: 100%; background-color: rgb(0, 0, 0); ">    
+                    <label class="nav_btn" onclick="nav()">
+                        <span>&nbsp; </span>
+                        <span>&nbsp; </span>
+                        <span>&nbsp; </span>
+                    </label>
+
+                    <p style= "margin-top: -4.1pt; padding-top: 2pt; padding-bottom: .5rem; color: white; text-align: center; font-size: 1.06rem; font-weight: 550; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <span>
+                            My Events
+                        </span>
+                        
+                        <span style="position: absolute; margin-top: -2pt; padding-left: .5rem; ">
+                            <img src="assets/image/flag1.png" width="26" height="26">
+                        </span>
+                        
+                    </p>
+                    <figure style="position: absolute; top: .8rem; right: .85rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.25rem; font-weight: 400; color: #fff; ">
+                        Help
+                    </figure>
+                    <br>
+
+                    <style>
+                        .evv{position: absolute; display: flex; float: left; width: 100%; height: 50px; padding-top: 10pt; background: rgb(0, 0, 0); color: white; font-weight: 300; font-size: 1rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+                        .eve{width: 50%; text-align: center;}
+                        
+                        
+                    </style>
+    
+                    <div class="evv">
+                        <div class="eve" id="eve">
+                            <p>UPCOMING (93)</p>
+                        </div>
+                        <div class="eve" id="eve1">
+                            <p style="color: rgb(173, 170, 170);">PAST (4)</p>
+                        </div>
+                    </div>
+                    <div style="position: absolute; display: flex; margin-left: 0; width: 50%; height: 6px; z-index: 1;  background:white; margin-top:46px;"></div>
+                    
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="container1">
+
+                    <a href="tick/index.html" style="cursor: pointer; text-decoration: none; ">
+
+                        <figure>
+                            <img src="assets/image/globe_images/card.png">
+                        </figure>
+    
+                    </a>
+    
+                    <a href="tick/event.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card1.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/3.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card2.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/4.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card3.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/5.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card4.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/6.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card5.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/7.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card6.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/8.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card7.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/9.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card8.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/10.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/card9.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/11.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card10.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/12.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card11.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/13.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card12.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/14.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card13.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="tick/15.html" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card14.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card15.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card16.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card17.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card18.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card19.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card20.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card21.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card22.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card23.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card24.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card25.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card26.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card27.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card28.png">
+                        </figure>
+    
+                    </a>
+
+                    <a href="#" style="cursor: pointer; text-decoration: none; ">
+    
+                        <figure>
+                            <img src="assets/image/globe_images/duplicate/card29.png">
+                        </figure>
+    
+                    </a>
+
+
+
+
+
+
+
+
+                </div>
+
+               
+                <style>
+                    .bodi { display: flex; justify-content: center; align-items: center; height: 10vh; background-color: none; }
+                    .loader { width: 50px; height: 50px; border: 5px solid rgba(17, 17, 17, 0.2); border-top: 5px solid #0832ec; border-radius: 50%; animation: spin 1s linear infinite; } 
+                    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } 
+
+                </style>
+                <div class="bodi">
+                    <div class="loader"></div> 
+
+                </div>
+
+                <div class="container1">
+
+                    <a href="tick/event1.html" style="cursor: pointer; text-decoration: none; ">
+
+                        <figure>
+                            <img src="assets/image/globe_images/card10.png">
+                        </figure>
+    
+                    </a>
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+            </div>
+            
+            <!--<figure>
+                <a href="events.html">
+                    <img src="assets/image/globe_images/zach.PNG" alt="ticketmaster banner">
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="events.html">
+                    <img src="assets/image/globe_images/swift.PNG" alt="buy new tickets from ticketmaster">
+                </a>           
+            </figure>
+
+            <figure>
+                <a href="#">
+                    <img src="assets/image/globe_images/new.PNG" alt="buy new tickets from ticketmaster">
+                </a> 
+            </figure>
+
+            <figure>
+                <a href="#">
+                    <img src="assets/image/globe_images/concert.PNG" alt="buy new tickets from ticketmaster">
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="#">
+                    <img src="assets/image/globe_images/new1.PNG"  alt="buy new tickets from ticketmaster">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#">
+                    <img src="assets/image/globe_images/popular.PNG" alt="buy new tickets from ticketmaster">
+                </a>
+            </figure>
+            <br>
+            <br>
+            <br> -->
+        </section>
+
+    </main>
+
+
+    
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
